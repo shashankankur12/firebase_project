@@ -6,7 +6,7 @@ const HomeScreen = ({navigation}) => {
     <View style={styles.container}>
 
       <FlatList
-        data={[{key: 'Analytics'}, {key: 'Crashlytics'}]}
+        data={[{key: 'Analytics'}, {key: 'Crashlytics'}, {key: 'Authantication'}]}
         renderItem={({item}) => (
           <Text style={styles.item}
             onPress={() => {

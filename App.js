@@ -1,13 +1,12 @@
 import { NavigationContainer } from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import React from 'react';
-import {
-  Text,
-  View,
-} from 'react-native';
+import {Text,View} from 'react-native';
 import HomeScreen from './screens/HomeScreen'
 import AnalyticsScreen from './screens/AnalyticsScreen'
 import CrashlyticsScreen from './screens/CrashlyticsScreen'
+import SignUpScreen from './screens/SignUpScreen'
+import AuthScreen from './screens/AuthScreen'
 import {analytics} from './Setup'
 const Stack = createNativeStackNavigator();
 
@@ -38,6 +37,8 @@ const App=() => {
         <Stack.Screen name="Home" component={HomeScreen} />
         <Stack.Screen name="Analytics" component={AnalyticsScreen} />
         <Stack.Screen name="Crashlytics" component={CrashlyticsScreen} />
+        <Stack.Screen name="Authantication" component={AuthScreen}/>
+        <Stack.Screen name="SignUp" component={SignUpScreen}/>
       </Stack.Navigator>
 
     </NavigationContainer>
